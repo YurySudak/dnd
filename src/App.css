@@ -17,11 +17,51 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.board {
+  padding: .5rem;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: .5rem;
+  align-items: start;
+}
+
+.group {
+  padding: .5rem;
+  background-color: #505165;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+.item {
+  border-radius: 10px;
+  /*min-height: 10px;*/
+  background-color: #9f9faa;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.item:not(:last-of-type) {
+  margin-bottom: .5rem;
+}
+
+.item * {
+  margin: 0.2rem;
 }
 
 .App-link {
